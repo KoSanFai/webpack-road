@@ -1,0 +1,19 @@
+.DS_Store
+node_modules/
+dist/
+dll/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+config/proxy.js
+build/proxy.js
+package-lock.json
+
+# Directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.project

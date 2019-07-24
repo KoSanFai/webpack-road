@@ -1,0 +1,18 @@
+$base-color: #ff0000;
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.superme {
+  margin: 200px auto;
+  width: 300px;
+  height: 100px;
+  border-radius: 10px;
+  line-height: 100px;
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  font-weight: bold;
+  background: $base-color;
+  transform: rotate(30deg);
+}
