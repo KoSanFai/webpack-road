@@ -6,6 +6,7 @@ const CopyPlugin = require("copy-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const OptimizeCssnanoPlugin = require("@intervolga/optimize-cssnano-plugin")
 const { CleanWebpackPlugin } = require("clean-webpack-plugin")
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 const webpackConfig = require('./webpack.config')
 
@@ -79,6 +80,7 @@ module.exports = merge(webpackConfig, {
         to: resolve("dist/export-template")
       }
     ]),
-    new CleanWebpackPlugin()
+    new CleanWebpackPlugin(),
+    new BundleAnalyzerPlugin()
   ]
 })
