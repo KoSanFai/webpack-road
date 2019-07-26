@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_TEST_ENV=dev webpack-dev-server --inline --color --NODE_ENV=dev --config ./build/webpack.config.js",
-    "build": "cross-env NODE_TEST_ENV=prod webpack --env=dev --config ./build/webpack.config.js"
+    "dev": "cross-env NODE_ENV_TEST=dev webpack-dev-server --inline --color --config ./build/webpack.dev.js",
+    "build": "cross-env NODE_ENV_TEST=prod webpack --config ./build/webpack.prod.js"
   },
   "keywords": [],
   "author": "",

@@ -6,4 +6,4 @@ new Vue({
 }).$mount('#app')
 console.log(process.env.coreHR)
 console.log(process.env.BASE_URL)
-console.log(process.env.NODE_TEST_ENV)
+console.log(process.env.NODE_ENV_TEST)
